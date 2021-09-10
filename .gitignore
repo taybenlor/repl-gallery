@@ -1,0 +1,19 @@
+node_modules
+.DS_Store
+
+# Internally used while building
+_site
+dist
+dist-ssr
+*.local
+.parcel-cache
+
+
+# Don't want to commit any personal data
+*.csv
+
+
+# Don't include firebase config
+.firebaserc
+firebase.json
+.firebase

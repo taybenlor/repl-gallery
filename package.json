@@ -1,0 +1,24 @@
+{
+  "name": "replit-gallery",
+  "version": "0.1.0",
+  "licence": "MIT",
+  "private": true,
+  "description": "A template for displaying a gallery of replit projects.",
+  "scripts": {
+    "dev:eleventy": "eleventy --watch",
+    "dev:parcel": "parcel watch _site/index.html",
+    "dev:serve": "python3 -m http.server --directory dist",
+    "dev": "concurrently npm:dev:*",
+    "scrape": "python3 scrape.py",
+    "build": "eleventy && parcel build _site/index.html"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "concurrently": "^6.2.1",
+    "eleventy": "^1.0.6",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.14",
+    "typescript": "^4.3.2"
+  }
+}
